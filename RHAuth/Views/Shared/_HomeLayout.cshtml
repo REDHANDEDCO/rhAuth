@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="~/lib/font-awesome/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/fontawesome.css" />
+    <link href="~/lib/font-awesome/css/regular.css" rel="stylesheet" />
+    <link href="~/lib/font-awesome/css/solid.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/VerifyEmail.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light p-0">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="col-sm-10 col-md-10 col-lg-2 col-xl-3 header-title-div">
+            <a class="navbar-header-title-parent" href="https://redhandedco.com/">
+                <h3 class="navbar-header-title margin-auto px-40">
+                    REDHANDED
+                </h3>
+            </a>
+        </div>
+        <div class="col-sm-10 col-md-12 col-lg-10 col-xl-9 p-0">
+            <div class="hide-me-on-mob sec-top-bar border-b-0 box-shadow-none bg-transperant ">
+                <div class="col-4 margin-auto menu-item-nav-div">
+                </div>
+                <div class="col-8 d-flex margin-auto menu-item-nav-div justify-content-end second-top-bar-bg-gradiant px-40 my-0">
+                    <ul class="navbar-nav my-auto mx-0">
+                        <li class="nav-item">
+                            <a class="b-right" href="https://redhandedco.com/about-us">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="b-right" href="https://resources.redhandedco.com/">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="b-right" href="https://redhandedco.com/our-partners">Partners</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class=" " href="https://redhandedco.com/pricing">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end h-55 px-40" id="navbarTogglerDemo03">
+                <div class="login-signup-btn nav-bar-authentication-btn-row d-block d-lg-flex">
+                    @*<div class="cursor-pointer cursor nav-link d-flex d-lg-inline-block" style="z-index:5">
+                        <i class="fas fa-search red-handed-search-icon"></i>
+                        <span class="d-lg-none d-inline-block"> Search</span>
+                    </div>*@
+                    <button class="nav-link text-white m-auto ml-md-3 mb-md-1" name="login" type="button">
+                        Log In
+                    </button>
+                    <button class="outline-red-btn nav-link m-auto ml-md-3 mb-md-1" name="Sign up" type="button">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer>
+        <div class="row m-0">
+            <div class="col-lg-4 col-md-3 col-sm-3 col-xs-3 mt-4">
+                <div class="footer-left-menu">
+                    <a href="https://redhandedco.com/">
+                        PRICING
+                    </a>
+                    <a href="https://redhandedco.com/">
+                        TERMS & CONDITIONS
+                    </a>
+                </div>
+                <span class="footer-aside pl-1 pt-3">
+                    © 2021 REDHANDED
+                </span>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                <div class="footer-middle mt-5 text-center">
+                    <a href="https://www.facebook.com/RedHanded-Co-100875638804653/?ref=page_internal"
+                       rel="noreferrer"
+                       target="_blank" class="cursor ">
+                        <i class="fab fa-facebook-f logo"></i>
+                    </a>
+                    <a href="https://www.instagram.com/redhandedco/"
+                       rel="noreferrer"
+                       target="_blank" class="cursor ">
+                        <i class="fab fa-instagram logo"></i>
+                    </a>
+                    <a href="https://www.pinterest.com/helloredhanded"
+                       rel="noreferrer"
+                       target="_blank" class="cursor ">
+                        <i class="fab fa-pinterest-p logo"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-3 col-sm-3 col-xs-3 mt-4 pr-3">
+                <div class="footer-bside">
+                    <div class="bside-links">
+                        <a href="https://redhandedco.com/">
+                            ABOUT
+                        </a>
+                        <a rel="noreferrer" target="_blank" href="http://resources.redhandedco.com/">
+                            BLOG
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

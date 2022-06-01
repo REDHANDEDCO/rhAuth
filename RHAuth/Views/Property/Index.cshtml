@@ -1,0 +1,31 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_LayoutThumbnail.cshtml";
+}
+
+
+
+
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var descriptionToUrl = replaceSpace('@ViewBag.TitleForURLConversion');
+
+        setTimeout(function () {
+            window.location.href = '@ViewBag.FrontEndUrl' + "Listing/" + descriptionToUrl + '/' + @ViewBag.PropertyId;
+        },500)
+    });
+
+    function replaceSpace(text) {
+        var i = 0, length = text.length;
+        for (i; i < length; i++) {
+            text = text.replace(" ", "-");
+            text = text.replace(",", "");
+        }
+        return text;
+    }
+
+</script>

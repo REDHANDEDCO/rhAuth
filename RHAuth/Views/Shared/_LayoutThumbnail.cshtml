@@ -1,0 +1,19 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:url" content="@ViewBag.PropertyUrl" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="@ViewBag.PropertyTitle" />
+    <meta property="og:description" content="@ViewBag.PropertyDescription" />
+    <meta property="og:image" content='@ViewBag.PropertyImage' />
+</head>
+
+<body>
+    @RenderBody()
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
